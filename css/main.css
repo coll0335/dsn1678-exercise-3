@@ -90,6 +90,7 @@ body {
 
   background-color: #000;
   border-radius: 6px;
+  transition: all 250ms linear;
 }
 
 .sales__details::before {
@@ -155,4 +156,14 @@ body {
   background: #555;
 
   text-indent: 100%;
+}
+
+.sales__details {
+  opacity:0;
+}
+
+.sales__details[data-state="active"] {
+  opacity: 1;
+  margin-top: -.5em;
+
 }

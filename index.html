@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Yearly Sales</title>
-  <link class="chart-list__link" href="css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
@@ -20,11 +20,11 @@
 
     <div class="sales-group">
 
-      <article class="sales">
+      <article class="sales sales-left">
         <h2 class="sales__title">2013</h2>
         <strong class="sales__total">$5&nbsp;B</strong>
 
-        <aside class="sales__details">
+        <aside class="sales__details sales__details__left" data-state="inactive">
          <ul class="chart-list">
             <li>
               <a class="chart-list__link" href="#">1st Quarter</a>
@@ -50,11 +50,11 @@
         </aside>
       </article>
 
-      <article class="sales">
+      <article class="sales sales-right" data-state="inactive">
         <h2 class="sales__title">2014</h2>
         <strong class="sales__total">$6.2&nbsp;B</strong>
 
-        <aside class="sales__details">
+        <aside class="sales__details sales__details__right">
          <ul class="chart-list">
             <li>
               <a class="chart-list__link" href="#">1st Quarter</a>
