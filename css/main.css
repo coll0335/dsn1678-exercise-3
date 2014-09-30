@@ -1,0 +1,158 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  background-color: #6b6e80;
+  box-sizing: border-box;
+
+  color: #fff;
+  font: normal 100%/1.5 sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+.masthead {
+  background-color: #8a8d9e;
+}
+
+.title {
+  margin: 0;
+  padding: 1em 0;
+
+  font-weight: normal;
+  text-align: center;
+}
+
+.sales-group {
+  padding: 2em 0;
+
+  text-align: center;
+}
+
+.sales {
+  display: inline-block;
+  padding: 1em;
+  position: relative;
+  width: 24em;
+
+  background-color: rgba(127, 219, 255, 0.6);
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.sales__title {
+  bottom: 1rem;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+
+  opacity: 0.8;
+
+  font-size: 4rem;
+}
+
+.sales__total {
+  display: block;
+  margin: 0 0 6rem 0;
+
+  font-size: 6rem;
+}
+
+.sales__details {
+  left: 0;
+  margin: 25px 5% 0;
+  padding: 2em;
+  position: absolute;
+  width: 90%;
+
+  background-color: #000;
+  border-radius: 6px;
+}
+
+.sales__details::before {
+  top: -10px;
+  content: " ";
+  height: 0;
+  left: -10px;
+  margin-left: 50%;
+  position: absolute;
+  width: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #000;
+}
+
+.chart-list {
+  margin: 0;
+  padding: 0;
+}
+
+.chart-list > li {
+  display: block;
+  position: relative;
+
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.chart-list__link {
+  display: block;
+  padding: 0.4em 4.5em 0.4em 0.5em;
+  position: relative;
+  z-index: 2;
+
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+}
+
+.chart-list__count {
+  display: block;
+  margin: 0 0.3em;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  color: #999;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 2.3rem;
+  text-align: right;
+}
+
+.chart-list__bar {
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+
+  background: #555;
+
+  text-indent: 100%;
+}
